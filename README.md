@@ -6,7 +6,7 @@ Sitio web del proyecto ReFil: reciclaje de botellas PET y filamento para impresi
 
 - `index.html`: proyecto, proceso, sobre nosotros e impacto.
 - `vender.html`: calculadora de aporte de botellas y puntos propuestos en Cochabamba.
-- `comprar.html`: página de filamento, a Bs 17 por rollo.
+- `comprar.html`: página de filamento, a Bs 570 por rollo.
 
 ## Abrir en VS Code
 
