@@ -25,5 +25,15 @@
   document.querySelector('#add-roll')?.addEventListener('click', () => {
     if (feedback) feedback.textContent = `${getQuantity()} ${getQuantity() === 1 ? 'rollo agregado' : 'rollos agregados'} · ${formatBs(getQuantity() * pricePerRoll)}. Coordina tu pedido con ReFil.`;
   });
+
+  const selectedColor = document.querySelector('#selected-color');
+  document.querySelectorAll('.color-option').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('.color-option').forEach(option => {
+      const selected = option === button;
+      option.classList.toggle('selected', selected);
+      option.setAttribute('aria-pressed', String(selected));
+    });
+    if (selectedColor) selectedColor.textContent = button.dataset.color;
+  }));
   update();
 })();
