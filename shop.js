@@ -2,7 +2,7 @@
   const quantity = document.querySelector('#roll-quantity');
   const total = document.querySelector('#roll-total');
   const feedback = document.querySelector('#order-feedback');
-  const pricePerRoll = 570;
+  const pricePerRoll = 144;
   if (!quantity || !total) return;
 
   const formatBs = value => `Bs ${new Intl.NumberFormat('es-BO', { maximumFractionDigits: 0 }).format(value)}`;
